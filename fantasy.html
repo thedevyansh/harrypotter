@@ -43,11 +43,14 @@
 
     #fontawesome {
       font-size: 20px;
-      margin-left: 38%;
+      display: flex;
+      /*margin-left: 38%;*/
     }
     
     #fontawesome a {
+      flex: 1;
       color: black;
+      margin-left: 10%;
     }
 
     #bottomtop {
@@ -61,6 +64,10 @@
       right: 20px;
       color: #000000;
       z-index: 300;
+    }
+
+    hr {
+      opacity: 0.5;
     }
 
 
@@ -322,7 +329,7 @@
   window.onscroll = scrolling;
   function scrolling() {
 
-    if(document.documentElement.scrollTop > 100 || document.body.scrollTop > 100){
+    if(document.documentElement.scrollTop > 200 || document.body.scrollTop > 200){
       myButton.style.display = "block";
     }
 
