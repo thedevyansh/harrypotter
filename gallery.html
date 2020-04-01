@@ -33,7 +33,7 @@
 
 		.div1 {
 			background-image: url('0.jpg');
-			opacity: 0.5;
+			opacity: 0.7;
 		}
 
 		.div2 {
@@ -82,13 +82,7 @@
 		}
 
 
-		.div1 div:nth-child(1) {
-			position: fixed;
-			top: 5px;
-			right: 1px;
-		}
-
-		.div1 div:nth-child(2), .div2 div, .div3 div, .div4 div, .div5 div,
+		.div1 div:nth-child(1), .div2 div, .div3 div, .div4 div, .div5 div,
 		.div6 div, .div7 div, .div8 div, .div9 div, .div10 div  {
          	position: absolute;
          	font-family: 'Raleway', sans-serif;
@@ -106,7 +100,7 @@
 			text-decoration: none;
 		}
 
-		.div1 div:nth-child(3) {
+		.div1 div:nth-child(2) {
             position: absolute;
             font-family: 'Parisienne', cursive;
             font-size: 25px;
@@ -178,7 +172,7 @@
 			opacity: 0.8;
 		}
 
-		.endbreak p:nth-child(2) {
+		.endbreak p:nth-child(1) {
 			position: absolute;
 			bottom: 0;
 			left: 0;
@@ -190,11 +184,34 @@
 		}
 
     
-		@media only screen and (max-width: 576px) {
+		@media only screen and (max-width: 500px) {
 			.break p {
 			text-align: justify;
 			font-family: 'Roboto', sans-serif;
-		}}
+		    }
+
+		    .div1 {
+			background-image: url('harry.png');
+			opacity: 0.9;
+		    }
+
+		    .div1 div:nth-child(1) {
+		    	top: 92%;
+		    }
+
+		    .div1 span {
+		    	background-color: rgba(173,173,173,0.7);
+		    	padding: 5px;
+		    	border-radius: 20px;
+		    	font-size: 20px;
+		    	text-transform: uppercase;
+		    }
+
+		    .div1 div:nth-child(2) {
+		    	color: #fa8072;
+		    }
+
+	    }
 
 		@media only screen and (min-width: 576px) {
 			.break h3{
@@ -213,7 +230,7 @@
 
 		.pulse-loader div {
 		    position: absolute;
-		    border: 3px solid white;
+		    border: 3px solid #97978f;
 		    border-radius: 50%;
 		    animation-name: pulse;
 		    animation-duration: 1s;
@@ -254,9 +271,9 @@
 
 	<div id = "div1" class="div1">
 
-		<div>
+		<!--<div>
 			<img src="iconN.png">
-		</div>
+		</div>-->
 		<div>
 			<a href="#d1"><span>Let's explore</span></a>
 		</div>
