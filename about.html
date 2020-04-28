@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
           rel="stylesheet">
-          <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
           rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5e2741203f.js" crossorigin="anonymous"></script>
 
     <title>Frosted design</title>
 
@@ -90,6 +91,33 @@ body{
     height: auto;
 }
 
+.drop {
+    color: #FFC529;
+    opacity: 0.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="text"], input[type="submit"] {
+    padding: 3px;
+    margin: 5px;
+    font-family: 'Raleway', sans-serif;
+    border-style: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    color: white;
+    padding: 3px 8px;
+    background-color: #FE724C;
+}
+
+.fab {
+    font-size: 16px;
+    margin: 4px;
+    color: white;
+}
+
 </style>
 </head>
     
@@ -130,9 +158,31 @@ body{
              <div class="div1">
                          <img class="image2" src="code.JPG">
              </div>
+             <br>
+
+             <div class="drop">
+                Drop me a message :)
+             </div>
 
              <div class="div1">
-                Drop me a message :)
+                <form class="form"
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeiG4RmqHZpyXXE_htSegf0IEYCdlj-LGJlkBjXsMCx57QAtQ/formResponse">
+                    <input name="entry.1472208095" type="text" placeholder="Name" required><br>
+                    <input name="entry.118583634" type="text" placeholder="Remarks" required><br>
+                    <input name="entry.1209725692" type="text" placeholder="Suggestions(if any)"><br>
+                    <input type="submit">
+                </form>
+             </div>
+
+             <div class="drop">
+                Social media handles
+             </div>
+
+             <div class="div1">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
              </div>
 
         </div>
