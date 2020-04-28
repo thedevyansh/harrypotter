@@ -97,7 +97,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-input[type="text"], input[type="submit"] {
+input[type="text"], input[type="button"] {
     padding: 5px;
     margin: 5px;
     font-family: 'Raleway', sans-serif;
@@ -106,7 +106,7 @@ input[type="text"], input[type="submit"] {
     font-weight: bold;
 }
 
-input[type="submit"] {
+input[type="button"] {
     color: white;
     padding: 3px 8px;
     background-color: #FE724C;
@@ -128,6 +128,13 @@ input[type="submit"] {
 
 }
 
+.myPara {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    margin: 10px 10px 10px 6px;
+    color: #FFC529;
+    
+}
 
 </style>
 </head>
@@ -178,12 +185,14 @@ input[type="submit"] {
              </div>
 
              <div class="div1">
-                <form class="form"
+                <form class="myForm"
                 action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeiG4RmqHZpyXXE_htSegf0IEYCdlj-LGJlkBjXsMCx57QAtQ/formResponse">
-                    <input name="entry.1472208095" type="text" placeholder="Name" required><br>
-                    <input name="entry.118583634" type="text" placeholder="Remarks" required><br>
+                    <input class="yourName" name="entry.1472208095" type="text" placeholder="Name">
+                    <br>
+                    <input class="yourRemarks" name="entry.118583634" type="text" placeholder="Remarks"><br>
                     <input name="entry.1209725692" type="text" placeholder="Suggestions (if any)"><br>
-                    <input type="submit" value="Submit">
+                    <p class="myPara"></p>
+                    <input class="submitBtn" type="button" value="Submit">
                 </form>
              </div>
 
@@ -201,6 +210,27 @@ input[type="submit"] {
         </div>
         
         <div class="footer">developed with ❤️ by DEVYANSH</div>
+
+        <script>
+            const myForm = document.querySelector('.myForm');
+            const yourName = document.querySelector('.yourName');
+            const yourRemarks = document.querySelector('.yourRemarks');
+            const myPara = document.querySelector('.myPara');
+            const submitBtn = document.querySelector('.submitBtn');
+
+            function formSubmit() {
+                
+                if(yourName.value !== '' && yourRemarks.value !== '') {
+                myForm.submit();
+                myForm.reset();
+            }
+
+            else
+                myPara.innerHTML = 'Name and Remarks fields are mandatory...';
+            }
+
+            submitBtn.addEventListener('click', formSubmit);
+        </script>
       
 </body>
 </html>
