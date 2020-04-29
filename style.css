@@ -16,6 +16,7 @@ body {
 
 .greet {
 	display: block;
+	position: absolute;
 	width: 100%;
 	top: 80px;
 	left: 60px;
@@ -93,6 +94,9 @@ input[type="submit"]:hover {
 @media only screen and (max-width: 500px) {
 	.greet {
 		font-size: 45px;
+		left: 0;
+		top: 160px;
+		text-align: center;
 	}
 
 	.greet span {
