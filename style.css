@@ -95,13 +95,13 @@ input[type="submit"]:hover {
 	.greet {
 		font-size: 45px;
 		left: 0;
-		top: 160px;
 		text-align: center;
 	}
 
 	.greet span {
 		font-size: 25px;
 	}
+
 	.box {
 		left: 50%;
 	}
