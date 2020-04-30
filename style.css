@@ -63,6 +63,10 @@ input[type="submit"]:hover {
 	color: white;
 }
 
+.fa:hover {
+	color: #f2962e;
+}
+
 .footer {
 	display: block;
 	position: absolute;
