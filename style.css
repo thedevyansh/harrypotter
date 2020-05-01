@@ -29,6 +29,19 @@ body {
 .greet span {
 	font-size: 45px;
 	font-family: 'Raleway', sans-serif;
+	animation-name: boom;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes boom {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 .box {
