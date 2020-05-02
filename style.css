@@ -26,13 +26,10 @@ body {
 	color: #fdaf05;
 }
 
-.greet span {
+.greet span, .footer {
 	font-size: 45px;
 	font-family: 'Raleway', sans-serif;
-	animation-name: boom;
-	animation-duration: 4s;
-	animation-timing-function: ease-in-out;
-	animation-fill-mode: forwards;
+	animation: boom 4s ease-in-out forwards;
 }
 
 @keyframes boom {
