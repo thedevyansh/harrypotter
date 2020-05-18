@@ -77,10 +77,6 @@ input[type="submit"]:hover {
 	color: #f2962e;
 }
 
-.myAudio {
-	z-index: -2;
-}
-
 .footer {
 	display: block;
 	position: absolute;
