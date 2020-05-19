@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
           rel="stylesheet">
     <script src="https://kit.fontawesome.com/5e2741203f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>ABOUT</title>
 
@@ -19,6 +20,7 @@
 
 body{
     background-color: black;
+    opacity: 0.5;
 }
 
 .container {
@@ -34,7 +36,7 @@ body{
     margin-bottom: 30px;
     color: white;
     font-family: 'Poppins', sans-serif;
-    opacity: 0.5;
+    /*opacity: 0.5;*/
 }
 
 .header p {
@@ -58,7 +60,7 @@ body{
     position: relative;
     color: white;
     font-family: 'Poppins', sans-serif;
-    opacity: 0.5;
+    /*opacity: 0.5;*/
     margin: 20px auto;
 }
 
@@ -100,7 +102,7 @@ body{
 
 .drop {
     color: #FFC529;
-    opacity: 0.5;
+    /*opacity: 0.5;*/
     font-family: 'Poppins', sans-serif;
 }
 
@@ -161,17 +163,17 @@ input[type="button"] {
                 <p>Roll No. 11913035</p>
             </div>
 
-            <div class="div1">
+            <div class="div1" data-aos="zoom-in">
                 <img class="image1" src="https://res.cloudinary.com/datowwrax/image/upload/v1588007280/me_dvtycj.jpg" width="250" height="250">
             </div>
 
-            <div class="div1">Devyansh Chawla</div>
+            <div class="div1" data-aos="zoom-in">Devyansh Chawla</div>
 
-            <div class="div1">Engineering Undergrad at NIT, Kurukshetra.</div>
+            <div class="div1" data-aos="zoom-in">Engineering Undergrad at NIT, Kurukshetra.</div>
 
             <div class="div1 s"></div>
 
-             <div class="div1">
+             <div class="div1" data-aos="zoom-in">
                  Hi, guys! Glad you're here :) &nbspI am pursuing Information Technology at National
                  Institute of Technology, Kurukshetra. I am a bibliophile, <span>potterhead</span>, and 
                  tech enthusiast.<br>
@@ -180,7 +182,7 @@ input[type="button"] {
                  I find it a necessity, albeit.
              </div>
 
-             <div class="div1">
+             <div class="div1" data-aos="zoom-in">
                  I admire minimalism, and read <span>Calvin & Hobbes</span> often. Conspicuously, most of my time
                  is spent writing code (which is actually important 😁). Other than this, I am interested
                  in learning new JavaScript technologies. How wonderful it is to create your own servers,
@@ -189,15 +191,15 @@ input[type="button"] {
              </div>
 
              <div class="div1">
-                         <img class="image2" src="indexAbout/code.JPG">
+                         <img data-aos="zoom-in" class="image2" src="indexAbout/code.JPG">
              </div>
              <br>
 
-             <div class="drop">
+             <div class="drop" data-aos="zoom-in">
                 Drop me a message :)
              </div>
 
-             <div class="div1">
+             <div class="div1" data-aos="zoom-in">
                 <form class="myForm"
                 action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeiG4RmqHZpyXXE_htSegf0IEYCdlj-LGJlkBjXsMCx57QAtQ/formResponse">
                     <input class="yourName" name="entry.1472208095" type="text" placeholder="Name">
@@ -219,6 +221,11 @@ input[type="button"] {
         </div>
         
         <div class="footer">developed with ❤️ by <a href="https://github.com/thedevyansh"><span>DEVYANSH</span></a></div>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+           AOS.init();
+        </script>
 
         <script>
             const myForm = document.querySelector('.myForm');
